@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.game.tsukiliaro.feeders.Options"
+    android:orientation="vertical"
+    android:background="@drawable/optbck"
+    android:gravity="center">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OPTIONS"
+        android:textStyle="bold"
+        android:textSize="52sp"
+        android:paddingBottom="20dp"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="200dp"
+                android:height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="Reset high score"
+                android:onClick="resetHighScore"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MUSIC:"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="69dp"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow>
+            <ToggleButton
+                android:id="@+id/musicToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VOLUME:"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="59dp"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow>
+            <SeekBar
+                android:id="@+id/volumeBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="menu"
+        android:layout_marginTop="40dp"
+        android:onClick="backTM"/>
+
+</LinearLayout>
